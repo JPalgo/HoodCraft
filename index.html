@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HoodCraft — polski KitPvP | Start 28.08</title>
-<meta name="description" content="HoodCraft — polski serwer Minecraft KitPvP z własnymi przedmiotami, skrzynkami i wojną klanów. Start 28.08, IP: hoodcraft.pl">
+<meta name="description" content="HoodCraft — polski serwer Minecraft KitPvP z własnymi przedmiotami, skrzynkami, duelami 1v1 z zakładami i wojną klanów. Start 28.08, IP: hoodcraft.pl">
 <meta name="theme-color" content="#050505">
 <link rel="canonical" href="https://hoodcraft.pl/">
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://hoodcraft.pl/">
 <meta property="og:title" content="HoodCraft — polski KitPvP | Start 28.08">
-<meta property="og:description" content="Własne przedmioty, skrzynki i wojna klanów. Wbijasz, bierzesz kit i walczysz. Start 28.08.">
+<meta property="og:description" content="Własne przedmioty, skrzynki, duele 1v1 z widownią i zakładami oraz wojna klanów. Start 28.08.">
 <meta property="og:image" content="https://hoodcraft.pl/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -47,6 +47,7 @@
     <div class="nav-links" id="nav-menu">
       <button class="nav-link active" type="button" data-tab="glowna">Główna</button>
       <button class="nav-link" type="button" data-scroll="itemy">Przedmioty</button>
+      <button class="nav-link" type="button" data-scroll="duele">Duele</button>
       <button class="nav-link" type="button" data-scroll="skrzynki">Skrzynki</button>
       <button class="nav-link" type="button" data-scroll="klany">Klany</button>
       <button class="nav-link" type="button" data-tab="sklep">Sklep</button>
@@ -98,7 +99,7 @@
       </h1>
 
       <p class="lead">
-        Polski KitPvP z własnymi przedmiotami, skrzynkami i wojną klanów.
+        Polski KitPvP z własnymi przedmiotami, duelami 1v1 z zakładami i wojną klanów.
         Wbijasz, bierzesz kit i od razu walczysz — bez godzin farmienia i nauki mechanik.
       </p>
 
@@ -177,7 +178,7 @@
   <section class="below reveal" id="itemy">
     <div class="section-head">
       <span>PRZEDMIOTY SPECJALNE</span>
-      <h2>Cztery itemy,<br>które zmieniają walkę</h2>
+      <h2>Itemy, które<br>zmieniają walkę</h2>
       <p>Każdy z nich robi coś, czego nie zrobisz zwykłym mieczem. Do tego dochodzą limitowane przedmioty z eventów.</p>
     </div>
 
@@ -185,26 +186,72 @@
       <article class="item-card">
         <span class="item-tag">KNOCKBACK III</span>
         <h3>Rózga</h3>
-        <p>Zwykły patyk, który nie zadaje obrażeń — po prostu wyrzuca przeciwnika w powietrze i poza arenę. Nie zabija. Upokarza.</p>
+        <p>Wybija przeciwnika w powietrze i poza arenę. Obrażeń nie zadaje.</p>
       </article>
       <article class="item-card">
         <span class="item-tag">DYSTANS</span>
         <h3>Kusza Przyciągania</h3>
-        <p>Odwraca zasady: trafiony przeciwnik nie odlatuje, tylko leci prosto na ciebie. Uciekinierzy przestają być problemem.</p>
+        <p>Trafiony przeciwnik leci do ciebie, a nie od ciebie.</p>
       </article>
       <article class="item-card">
         <span class="item-tag">MOBILNOŚĆ</span>
         <h3>Wędka Surfera</h3>
-        <p>Zahacz o blok i wystrzel się w powietrze. Skróty przez arenę, ucieczki z okrążenia i wejścia z góry na plecy wroga.</p>
+        <p>Zahacz o blok i wystrzel się w powietrze.</p>
       </article>
       <article class="item-card">
         <span class="item-tag">LOOT</span>
         <h3>Sakwa</h3>
-        <p>Po zabójstwie automatycznie zgarnia cały drop przeciwnika. Żadnego zbierania itemów w środku walki.</p>
+        <p>Po zabójstwie sama zgarnia drop przeciwnika.</p>
+      </article>
+      <article class="item-card item-card--reuse">
+        <span class="item-tag">SZYBKIE KOPANIE</span>
+        <h3>Piernik</h3>
+        <p>Podbija tempo kopania bloków.</p>
+        <span class="item-reuse">Wielokrotnego użytku — nie znika po zjedzeniu</span>
       </article>
     </div>
 
     <p class="item-more">…a przy eventach dochodzą kolejne, dostępne tylko przez chwilę.</p>
+  </section>
+
+  <!-- ---- DUELE ---- -->
+  <section class="below reveal" id="duele">
+    <div class="section-head">
+      <span>DUELE 1V1</span>
+      <h2>Wyzwij.<br>Wygraj. Zabierz.</h2>
+      <p>Bez umawiania się i czekania na wolną arenę — wyzwanie rzucasz jedną komendą, choćby stojąc na spawnie.</p>
+    </div>
+
+    <ol class="duel-flow">
+      <li>
+        <span class="duel-num">01</span>
+        <h3><code>/duel nick</code></h3>
+        <p>Wyzywasz kogo chcesz i skąd chcesz.</p>
+      </li>
+      <li>
+        <span class="duel-num">02</span>
+        <h3>Mała arena</h3>
+        <p>Serwer przenosi was obu na osobną mapę tylko dla tego pojedynku.</p>
+      </li>
+      <li>
+        <span class="duel-num">03</span>
+        <h3>Zwycięzca bierze wszystko</h3>
+        <p>Itemy przegranego zostają u wygranego.</p>
+      </li>
+    </ol>
+
+    <div class="duel-extra">
+      <article>
+        <span class="section-kicker">WIDOWNIA</span>
+        <h3>Oglądasz z trybun</h3>
+        <p>Każdy może wejść na pojedynek jako obserwator i patrzeć na walkę na żywo.</p>
+      </article>
+      <article>
+        <span class="section-kicker">ZAKŁADY</span>
+        <h3>Obstawiasz zwycięzcę</h3>
+        <p>Typujesz przed pierwszym ciosem. Trafisz — dzielisz się pulą z resztą widowni.</p>
+      </article>
+    </div>
   </section>
 
   <!-- ---- SKRZYNKI ---- -->

@@ -59,6 +59,12 @@ CO GDZIE ZMIENIĆ
   Wersja gry / tryb
       index.html -> <p class="server-strip"> oraz sekcja FAQ.
 
+  Przedmiot wielokrotnego użytku
+      Dopisz do karty klasę "item-card--reuse" i na końcu karty:
+      <span class="item-reuse">Wielokrotnego użytku — ...</span>
+      Karta dostaje wtedy srebrną ramkę zamiast czerwonej, żeby
+      od razu odróżniała się od jednorazówek.
+
   Discord
       index.html -> wyszukaj "discord.gg/hoodcraft"
 

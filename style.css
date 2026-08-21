@@ -61,6 +61,9 @@
 
   --shell: 1180px;
   --radius: 16px;
+
+  /* strzałka "w kółko" — oznaczenie przedmiotu wielokrotnego użytku */
+  --icon-loop: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 11a8 8 0 0 0-14.3-4.9M4 13a8 8 0 0 0 14.3 4.9'/%3E%3Cpath d='M20 4v5h-5M4 20v-5h5'/%3E%3C/svg%3E");
 }
 
 * { box-sizing: border-box; }
@@ -855,13 +858,15 @@ h1, h2, h3 { font-weight: 800; }
 
 .item-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 14px;
   margin-top: 36px;
 }
 
 .item-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   padding: 24px 22px 26px;
   border: 1px solid var(--line);
@@ -887,6 +892,7 @@ h1, h2, h3 { font-weight: 800; }
 }
 
 .item-tag {
+  align-self: flex-start;
   display: inline-block;
   padding: 4px 9px;
   border: 1px solid rgba(237, 42, 42, .3);
@@ -919,6 +925,136 @@ h1, h2, h3 { font-weight: 800; }
   color: #6d6d73;
   font-size: 13.5px;
   font-style: italic;
+}
+
+/* --- przedmiot wielokrotnego użytku wyróżniamy srebrem, nie czerwienią --- */
+
+.item-card--reuse {
+  border-color: rgba(215, 219, 224, .26);
+}
+
+.item-card--reuse::before {
+  background: linear-gradient(90deg, transparent, var(--silver), transparent);
+  opacity: .65;
+}
+
+.item-reuse {
+  margin-top: auto;
+  padding-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #dfe3e8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  line-height: 1.35;
+}
+
+.item-reuse::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  flex: none;
+  background: currentColor;
+  -webkit-mask: var(--icon-loop) center / contain no-repeat;
+          mask: var(--icon-loop) center / contain no-repeat;
+}
+
+/* ===================== DUELE ===================== */
+
+.duel-flow {
+  margin: 36px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.duel-flow li {
+  position: relative;
+  padding: 26px 24px 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(160deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .004)), var(--bg-soft);
+}
+
+/* strzałka między krokami */
+.duel-flow li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  z-index: 2;
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid rgba(237, 42, 42, .75);
+  border-right: 2px solid rgba(237, 42, 42, .75);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.duel-num {
+  color: #d51d1d;
+  font-family: var(--display);
+  font-size: 13px;
+  letter-spacing: .12em;
+}
+
+.duel-flow h3 {
+  margin: 12px 0 8px;
+  font-size: 17px;
+}
+
+.duel-flow code {
+  padding: 4px 9px;
+  border: 1px solid rgba(237, 42, 42, .32);
+  border-radius: 8px;
+  color: #ff8288;
+  background: rgba(201, 20, 29, .13);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 15px;
+}
+
+.duel-flow p {
+  margin: 0;
+  color: var(--dim);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.duel-extra {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.duel-extra article {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 26px 30px;
+  border: 1px solid rgba(237, 42, 42, .22);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 88% 0%, rgba(201, 20, 29, .22), transparent 62%),
+    var(--bg-soft);
+}
+
+.duel-extra h3 {
+  margin: 12px 0 8px;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.duel-extra p {
+  margin: 0;
+  color: var(--dim);
+  font-size: 13.5px;
+  line-height: 1.65;
 }
 
 /* --- skrzynki --- */
@@ -1451,7 +1587,7 @@ footer button:hover { color: #fff; }
 /* ===================== RWD ===================== */
 
 @media (max-width: 1080px) {
-  .item-grid { grid-template-columns: repeat(2, 1fr); }
+  .item-grid { grid-template-columns: repeat(3, 1fr); }
   .roadmap { grid-template-columns: repeat(2, 1fr); }
   .clan-panel { grid-template-columns: 1fr; gap: 30px; padding: 34px; }
   .split { grid-template-columns: 1fr; gap: 30px; }
@@ -1498,6 +1634,16 @@ footer button:hover { color: #fff; }
   .feature-grid,
   .crate-grid,
   .shop-preview { grid-template-columns: 1fr; }
+
+  .duel-flow { grid-template-columns: 1fr; }
+
+  .duel-flow li:not(:last-child)::after {
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: -12px;
+    transform: translateX(-50%) rotate(135deg);
+  }
 }
 
 @media (max-width: 780px) {
@@ -1528,7 +1674,7 @@ footer button:hover { color: #fff; }
   .countdown-grid { grid-template-columns: repeat(4, 1fr); }
 
   .below { padding: 56px 20px; }
-  .item-grid, .roadmap { grid-template-columns: 1fr; }
+  .item-grid, .roadmap, .duel-extra { grid-template-columns: 1fr; }
   .feature-card { min-height: 0; }
   .feature-card h3 { margin-top: 34px; }
   .cta-inner { padding: 44px 22px; }

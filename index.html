@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HoodCraft — polski KitPvP | Start 28.08</title>
+<meta name="description" content="HoodCraft — polski serwer Minecraft KitPvP z własnymi przedmiotami, skrzynkami i wojną klanów. Start 28.08, IP: hoodcraft.pl">
+<meta name="theme-color" content="#050505">
+<link rel="canonical" href="https://hoodcraft.pl/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hoodcraft.pl/">
+<meta property="og:title" content="HoodCraft — polski KitPvP | Start 28.08">
+<meta property="og:description" content="Własne przedmioty, skrzynki i wojna klanów. Wbijasz, bierzesz kit i walczysz. Start 28.08.">
+<meta property="og:image" content="https://hoodcraft.pl/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="HoodCraft — polski serwer Minecraft KitPvP">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/anton-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/anton-latin-ext.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise" aria-hidden="true"></div>
+
+<a class="skip-link" href="#tresc">Przejdź do treści</a>
+
+<div class="nav-wrap">
+  <nav class="nav" aria-label="Nawigacja główna">
+    <a class="brand" href="#glowna" data-tab="glowna">
+      <span class="brand-mark" aria-hidden="true">H<em>C</em></span>
+      <span class="brand-name">HOODCRAFT</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
+
+    <div class="nav-links" id="nav-menu">
+      <button class="nav-link active" type="button" data-tab="glowna">Główna</button>
+      <button class="nav-link" type="button" data-scroll="itemy">Przedmioty</button>
+      <button class="nav-link" type="button" data-scroll="skrzynki">Skrzynki</button>
+      <button class="nav-link" type="button" data-scroll="klany">Klany</button>
+      <button class="nav-link" type="button" data-tab="sklep">Sklep</button>
+      <a class="discord-mini" href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">Discord</a>
+    </div>
+  </nav>
+</div>
+
+<main id="tresc">
+
+<!-- ============ GŁÓWNA ============ -->
+<div id="glowna" class="tab-page active">
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="red-glow glow-left" aria-hidden="true"></div>
+    <div class="red-glow glow-right" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="status-pill"><span aria-hidden="true"></span>START 28.08 &middot; KITPVP &middot; POLSKI SERWER</p>
+
+      <span class="hero-logo-wrap">
+        <img class="hero-logo" src="assets/logo.png" alt="HoodCraft" width="520" height="520" fetchpriority="high">
+      </span>
+
+      <!--
+        NAPIS PRZECIĘTY MIECZEM
+        Trzy nałożone kopie tego samego tekstu:
+          .cut__half--top  → wszystko NAD linią cięcia (srebro), odsunięte w lewo-górę
+          .cut__half--bot  → wszystko POD linią cięcia (czerwień), odsunięte w prawo-dół
+          .cut__half--edge → wąski pas dokładnie na linii cięcia (rozżarzona rana)
+        Zmieniasz hasło? Wystarczy w pierwszej kopii — script.js zsynchronizuje resztę.
+      -->
+      <h1 class="hero-title cut">
+        <span class="cut__half cut__half--top" data-cut-source>
+          <span class="cut__line">ZAŁÓŻ</span>
+          <span class="cut__line">KAPTUR</span>
+        </span>
+        <span class="cut__half cut__half--bot" aria-hidden="true">
+          <span class="cut__line">ZAŁÓŻ</span>
+          <span class="cut__line">KAPTUR</span>
+        </span>
+        <span class="cut__half cut__half--edge" aria-hidden="true">
+          <span class="cut__line">ZAŁÓŻ</span>
+          <span class="cut__line">KAPTUR</span>
+        </span>
+        <span class="cut__spark" aria-hidden="true"></span>
+      </h1>
+
+      <p class="lead">
+        Polski KitPvP z własnymi przedmiotami, skrzynkami i wojną klanów.
+        Wbijasz, bierzesz kit i od razu walczysz — bez godzin farmienia i nauki mechanik.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">Dołącz na Discord</a>
+        <button class="btn btn-ghost" type="button" data-scroll="itemy">Zobacz co przygotowaliśmy</button>
+      </div>
+
+      <div class="ip-box">
+        <div class="ip-main">
+          <span class="kicker">IP SERWERA</span>
+          <button class="ip-copy" type="button" data-copy="hoodcraft.pl" aria-label="Skopiuj adres IP hoodcraft.pl">
+            <strong>hoodcraft.pl</strong>
+            <span class="ip-copy-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="12" height="12" rx="2"></rect>
+                <path d="M5 15V5a2 2 0 0 1 2-2h10"></path>
+              </svg>
+            </span>
+          </button>
+          <span class="ip-note">Serwer rusza 28.08 — wcześniej adres nie odpowiada.</span>
+        </div>
+
+        <div class="countdown" data-deadline="2026-08-28T18:00:00+02:00" aria-live="polite">
+          <span class="kicker">DO STARTU ZOSTAŁO</span>
+          <div class="countdown-grid">
+            <div><b data-cd="d">--</b><i>DNI</i></div>
+            <div><b data-cd="h">--</b><i>GODZ</i></div>
+            <div><b data-cd="m">--</b><i>MIN</i></div>
+            <div><b data-cd="s">--</b><i>SEK</i></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="server-strip">
+        <span>Tryb <b>KitPvP</b></span>
+        <span class="divider" aria-hidden="true"></span>
+        <span>Java <b>1.8 – 1.21</b></span>
+        <span class="divider" aria-hidden="true"></span>
+        <span>Discord <b>discord.gg/hoodcraft</b></span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ---- TRYB ---- -->
+  <section class="below reveal" id="tryb">
+    <div class="section-head">
+      <span>TRYB</span>
+      <h2>Nie kolejny pusty<br>KitPvP</h2>
+      <p>
+        Zaczynamy od jednego trybu i robimy go porządnie. Szybkie walki znasz — u nas dochodzą do tego
+        przedmioty, których nie ma nigdzie indziej, skrzynki i rywalizacja klanów o pierwsze miejsce.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <span class="num">01</span>
+        <h3>Wchodzisz i grasz</h3>
+        <p>Wybierasz kit, wbijasz na arenę i walczysz w kilkanaście sekund od wejścia. Zero farmienia startowego ekwipunku.</p>
+      </article>
+      <article class="feature-card">
+        <span class="num">02</span>
+        <h3>Własne mechaniki</h3>
+        <p>Przedmioty specjalne zmieniają sposób walki — ucieczka, dogonienie i dobicie przeciwnika wyglądają tu inaczej.</p>
+      </article>
+      <article class="feature-card">
+        <span class="num">03</span>
+        <h3>Rywalizacja</h3>
+        <p>Statystyki, ranking graczy i ranking klanów. Widać kto naprawdę rządzi na serwerze, a nie kto siedzi najdłużej.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ---- PRZEDMIOTY ---- -->
+  <section class="below reveal" id="itemy">
+    <div class="section-head">
+      <span>PRZEDMIOTY SPECJALNE</span>
+      <h2>Cztery itemy,<br>które zmieniają walkę</h2>
+      <p>Każdy z nich robi coś, czego nie zrobisz zwykłym mieczem. Do tego dochodzą limitowane przedmioty z eventów.</p>
+    </div>
+
+    <div class="item-grid">
+      <article class="item-card">
+        <span class="item-tag">KNOCKBACK III</span>
+        <h3>Rózga</h3>
+        <p>Zwykły patyk, który nie zadaje obrażeń — po prostu wyrzuca przeciwnika w powietrze i poza arenę. Nie zabija. Upokarza.</p>
+      </article>
+      <article class="item-card">
+        <span class="item-tag">DYSTANS</span>
+        <h3>Kusza Przyciągania</h3>
+        <p>Odwraca zasady: trafiony przeciwnik nie odlatuje, tylko leci prosto na ciebie. Uciekinierzy przestają być problemem.</p>
+      </article>
+      <article class="item-card">
+        <span class="item-tag">MOBILNOŚĆ</span>
+        <h3>Wędka Surfera</h3>
+        <p>Zahacz o blok i wystrzel się w powietrze. Skróty przez arenę, ucieczki z okrążenia i wejścia z góry na plecy wroga.</p>
+      </article>
+      <article class="item-card">
+        <span class="item-tag">LOOT</span>
+        <h3>Sakwa</h3>
+        <p>Po zabójstwie automatycznie zgarnia cały drop przeciwnika. Żadnego zbierania itemów w środku walki.</p>
+      </article>
+    </div>
+
+    <p class="item-more">…a przy eventach dochodzą kolejne, dostępne tylko przez chwilę.</p>
+  </section>
+
+  <!-- ---- SKRZYNKI ---- -->
+  <section class="below reveal" id="skrzynki">
+    <div class="section-head">
+      <span>SKRZYNKI I KLUCZE</span>
+      <h2>Otwierasz.<br>Ryzykujesz. Wygrywasz.</h2>
+      <p>Klucze zdobywasz w grze, dostajesz za eventy i za aktywność. Im wyższy poziom, tym rzadsza zawartość.</p>
+    </div>
+
+    <div class="crate-grid">
+      <article class="crate crate--common">
+        <span class="crate-badge">POZIOM I</span>
+        <h3>Klucz Zwykły</h3>
+        <p>Podstawa: zapasy na start walki, drobne kosmetyki i waluta serwerowa.</p>
+      </article>
+      <article class="crate crate--epic">
+        <span class="crate-badge">POZIOM II</span>
+        <h3>Klucz Epic</h3>
+        <p>Wejście do puli przedmiotów specjalnych, mocniejszych kitów i rzadszych kosmetyków.</p>
+      </article>
+      <article class="crate crate--legendary">
+        <span class="crate-badge">POZIOM III</span>
+        <h3>Klucz Legendary</h3>
+        <p>Najrzadsza pula na serwerze — najlepsze przedmioty, unikatowe kosmetyki i nagrody z eventów.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ---- KLANY ---- -->
+  <section class="below reveal" id="klany">
+    <div class="clan-panel">
+      <div class="clan-copy">
+        <span class="section-kicker">KLANY</span>
+        <h2>Wbijasz składem?<br>Startujesz z przewagą.</h2>
+        <p>
+          HoodCraft budujemy wokół ekip, nie samotników. Jeśli przyprowadzasz swoich ludzi,
+          nie zaczynacie od zera — dostajecie pakiet na start i miejsce w rankingu klanów od pierwszego dnia.
+        </p>
+
+        <ol class="clan-steps">
+          <li><span class="step-no">1</span><span>Zbierz skład minimum <b>5 osób</b>.</span></li>
+          <li><span class="step-no">2</span><span>Zgłoś klan na naszym Discordzie przed <b>28.08</b>.</span></li>
+          <li><span class="step-no">3</span><span>Każdy z was odbiera bonus w dniu startu.</span></li>
+        </ol>
+      </div>
+
+      <div class="clan-reward">
+        <span class="kicker">BONUS DLA KLANU 5+</span>
+        <p class="reward-big">2x Klucz Epic</p>
+        <p class="reward-sub">dla każdego członka składu</p>
+        <p class="reward-extra">+ pakiet startowy i tag klanu zarezerwowany przed startem</p>
+        <a class="btn btn-primary" href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">Zgłoś klan na Discordzie</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---- FAIR PLAY ---- -->
+  <section class="below reveal" id="fairplay">
+    <div class="split">
+      <div class="section-head">
+        <span>FAIR PLAY</span>
+        <h2>Cheaterzy psują<br>KitPvP. Wiemy.</h2>
+        <p>
+          Startujemy z antycheatem opartym na <b>GrimAC</b> — sprawdzonym, otwartoźródłowym rozwiązaniu,
+          które dostosowujemy pod nasze przedmioty i mechaniki. Zamiast pisać wszystko od zera,
+          bierzemy to, co działa, i szlifujemy pod HoodCraft.
+        </p>
+      </div>
+      <ul class="check-list">
+        <li>Wykrywanie killaury, reach i ruchu poza normą</li>
+        <li>Ustawienia dobierane pod nasze itemy — żeby Wędka Surfera nie kończyła się banem</li>
+        <li>Zgłoszenia z dowodem przyjmujemy na Discordzie i odpowiadamy na każde</li>
+        <li>Decyzje administracji tłumaczymy, nie chowamy pod dywan</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ---- ROADMAPA ---- -->
+  <section class="below reveal" id="roadmapa">
+    <div class="section-head">
+      <span>ROADMAPA</span>
+      <h2>Plan na najbliższe<br>miesiące</h2>
+      <p>Zaczynamy prosto, ale wszystko budujemy tak, żeby dało się później podmienić gotowce na własne systemy.</p>
+    </div>
+
+    <ol class="roadmap">
+      <li class="road-step is-now">
+        <span class="road-when">28.08</span>
+        <h3>Start KitPvP</h3>
+        <p>Otwarcie serwera, przedmioty specjalne, skrzynki, klany i pierwszy sezon rankingu.</p>
+      </li>
+      <li class="road-step">
+        <span class="road-when">Zaraz po starcie</span>
+        <h3>Sklep na Tebex</h3>
+        <p>Automatyczne zakupy rang i kluczy: BLIK, Paysafecard, karta i płatności krypto.</p>
+      </li>
+      <li class="road-step">
+        <span class="road-when">Sezon 1</span>
+        <h3>Własne pluginy</h3>
+        <p>Wymieniamy gotowe rozwiązania na autorskie — więcej eventówek, głębsza progresja.</p>
+      </li>
+      <li class="road-step">
+        <span class="road-when">Później</span>
+        <h3>Nowy tryb: Box</h3>
+        <p>Jeśli KitPvP wypali, dokładamy drugi tryb i łączymy je wspólnym kontem i rangami.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ---- FAQ ---- -->
+  <section class="below reveal" id="faq">
+    <div class="section-head">
+      <span>FAQ</span>
+      <h2>Pytania,<br>które padają najczęściej</h2>
+    </div>
+
+    <div class="faq-list">
+      <details>
+        <summary>Kiedy startuje serwer?</summary>
+        <p>28 sierpnia. Dokładną godzinę podamy na Discordzie kilka dni wcześniej.</p>
+      </details>
+      <details>
+        <summary>Jakie jest IP?</summary>
+        <p><b>hoodcraft.pl</b> — możesz je już dodać do listy serwerów, zacznie odpowiadać w dniu startu.</p>
+      </details>
+      <details>
+        <summary>Na jakiej wersji gram?</summary>
+        <p>Java Edition. Wpuszczamy klienty od 1.8 do 1.21, więc grasz na tym, na czym umiesz bić.</p>
+      </details>
+      <details>
+        <summary>Czy sklep daje przewagę w walce?</summary>
+        <p>W sklepie znajdziesz rangi, kosmetyki i klucze do skrzynek. Pilnujemy, żeby o wyniku pojedynku decydowała umiejętność, a nie kwota — przedmioty ze skrzynek zdobędziesz też grając.</p>
+      </details>
+      <details>
+        <summary>Jak zgłosić cheatera?</summary>
+        <p>Na Discordzie, na kanale zgłoszeń — nagranie albo screen mocno przyspiesza sprawę. Odpisujemy na każde zgłoszenie.</p>
+      </details>
+      <details>
+        <summary>Będą kolejne tryby?</summary>
+        <p>Tak. Kolejny w kolejce jest Box, ale dokładamy go dopiero wtedy, gdy KitPvP będzie stał solidnie.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ---- CTA ---- -->
+  <section class="cta-final reveal">
+    <div class="cta-inner">
+      <h2>Reszta ekipy jest już na Discordzie</h2>
+      <p>Tam ogłaszamy godzinę startu, wypuszczamy klucze i zbieramy zgłoszenia klanów.</p>
+      <a class="btn btn-primary btn-lg" href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">discord.gg/hoodcraft</a>
+    </div>
+  </section>
+</div>
+
+<!-- ============ SKLEP ============ -->
+<div id="sklep" class="tab-page">
+  <section class="shop-page">
+    <div class="shop-bg" aria-hidden="true"></div>
+
+    <div class="shop-content">
+      <span class="hc-badge" aria-hidden="true">H<em>C</em></span>
+
+      <h1 class="cut cut--sm">
+        <span class="cut__half cut__half--top" data-cut-source>
+          <span class="cut__line">SKLEP</span>
+          <span class="cut__line">WKRÓTCE</span>
+        </span>
+        <span class="cut__half cut__half--bot" aria-hidden="true">
+          <span class="cut__line">SKLEP</span>
+          <span class="cut__line">WKRÓTCE</span>
+        </span>
+        <span class="cut__half cut__half--edge" aria-hidden="true">
+          <span class="cut__line">SKLEP</span>
+          <span class="cut__line">WKRÓTCE</span>
+        </span>
+      </h1>
+
+      <p>
+        Sklep stawiamy na <b>Tebex</b>, żeby zakup rangi albo klucza działał od ręki,
+        bez czekania na administratora. Otwieramy go razem ze startem serwera.
+      </p>
+
+      <ul class="pay-list">
+        <li>BLIK</li>
+        <li>Paysafecard</li>
+        <li>Karta</li>
+        <li>Krypto</li>
+      </ul>
+
+      <div class="shop-preview">
+        <article><span class="kicker">PLANOWANE</span><h3>Rangi</h3><p>Wyróżnienie na czacie, dodatkowe komendy i kosmetyki.</p></article>
+        <article><span class="kicker">PLANOWANE</span><h3>Klucze</h3><p>Zwykłe, Epic i Legendary — pojedynczo oraz w pakietach.</p></article>
+        <article><span class="kicker">PLANOWANE</span><h3>Kosmetyki</h3><p>Efekty, tagi i skiny przedmiotów. Zero wpływu na walkę.</p></article>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">Powiadom mnie na Discordzie</a>
+        <button class="btn btn-ghost back-link" type="button" data-tab="glowna">← Wróć na stronę główną</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <span>© <span data-year>2026</span> HoodCraft — polski serwer Minecraft KitPvP</span>
+  <span class="footer-links">
+    <a href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">Discord</a>
+    <button type="button" data-tab="sklep">Sklep</button>
+    <a href="mailto:kontakt@hoodcraft.pl">kontakt@hoodcraft.pl</a>
+  </span>
+</footer>
+
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

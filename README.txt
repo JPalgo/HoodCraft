@@ -97,6 +97,12 @@ CO GDZIE ZMIENIĆ
 
   Regulamin
       regulamin.html
+      Struktura: 10 paragrafów, ułożone wg checklisty SimPay dla
+      regulaminu sklepu internetowego (identyfikacja sprzedawcy,
+      wymagania techniczne, moment zawarcia umowy, ceny i płatności,
+      realizacja, odstąpienie, reklamacje i niezgodność z umową,
+      dane osobowe, spory pozasądowe, postanowienia końcowe).
+
       Regulamin napisany jest pod DZIAŁALNOŚĆ NIEREJESTROWANĄ:
       bez NIP i REGON, bo nie ma wpisu do CEIDG.
       Pola wyróżnione na czerwono (klasa "fill") MUSZĄ zostać

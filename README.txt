@@ -2,6 +2,7 @@ HOODCRAFT — hoodcraft.pl
 
 PLIKI
   index.html                    strona główna + zakładka Sklep
+  regulamin.html                regulamin sklepu
   style.css                     style
   script.js                     zakładki, odliczanie, kopiowanie IP, animacje
   robots.txt, sitemap.xml       pod wyszukiwarki
@@ -67,6 +68,26 @@ CO GDZIE ZMIENIĆ
 
   Discord
       index.html -> wyszukaj "discord.gg/hoodcraft"
+
+  Uruchomienie sklepu Tebex
+      script.js -> na samej górze pliku:
+          var TEBEX_STORE = '';
+      Puste = zakładka Sklep pokazuje "SKLEP WKRÓTCE".
+      Po wpisaniu adresu sklepu, np.
+          var TEBEX_STORE = 'https://hoodcraft.tebex.io';
+      zakładka sama przechodzi w tryb sprzedaży: nagłówek
+      "SKLEP OTWARTY", przycisk "Przejdź do sklepu" i etykiety
+      kart "W SPRZEDAŻY". To jedyna linijka do zmiany.
+      Po wykupieniu Tebex Plus i podpięciu subdomeny wpisujesz
+      tam po prostu https://sklep.hoodcraft.pl
+
+  Regulamin
+      regulamin.html
+      Pola wyróżnione na czerwono (klasa "fill") MUSZĄ zostać
+      uzupełnione przed publikacją: dane usługodawcy, adres,
+      NIP, REGON, e-mail do reklamacji i data aktualizacji.
+      Sprzedawcą przy Tebeksie jest Tebex Limited — to celowe,
+      nie zmieniaj tego paragrafu bez sprawdzenia umowy z Tebeksem.
 
 DISCORD
   https://discord.gg/hoodcraft

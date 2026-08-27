@@ -5,6 +5,29 @@
 (function () {
   'use strict';
 
+  /* ============================================================
+     KONFIGURACJA — jedyne miejsce do ręcznej edycji
+     ============================================================ */
+
+  /*
+    Adres sklepu Tebex.
+
+    Dopóki jest tu pusty ciąg, zakładka Sklep pokazuje komunikat
+    "SKLEP WKRÓTCE". Gdy sklep będzie gotowy, wpisz jego adres:
+
+        var TEBEX_STORE = 'https://hoodcraft.tebex.io';
+
+    a po wykupieniu Tebex Plus i podpięciu własnej subdomeny:
+
+        var TEBEX_STORE = 'https://sklep.hoodcraft.pl';
+
+    Nic więcej nie trzeba zmieniać — nagłówek, opis, przyciski
+    i etykiety kart przestawią się same.
+  */
+  var TEBEX_STORE = '';
+
+  /* ============================================================ */
+
   var $  = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
 
@@ -13,14 +36,43 @@
      tylko raz — w kopii oznaczonej [data-cut-source] — a pozostałe
      warstwy dostają ją stąd, żeby nie rozjechały się przy edycji. */
 
-  $$('.cut').forEach(function (cut) {
-    var source = $('[data-cut-source]', cut);
-    if (!source) return;
+  function syncCuts() {
+    $$('.cut').forEach(function (cut) {
+      var source = $('[data-cut-source]', cut);
+      if (!source) return;
 
-    $$('.cut__half', cut).forEach(function (half) {
-      if (half !== source) half.innerHTML = source.innerHTML;
+      $$('.cut__half', cut).forEach(function (half) {
+        if (half !== source) half.innerHTML = source.innerHTML;
+      });
     });
-  });
+  }
+
+  syncCuts();
+
+  /* ---------- Sklep Tebex ------------------------------------
+     Strona domyślnie stoi w trybie "wkrótce" — także wtedy, gdy
+     JavaScript się nie wykona. Tryb sklepu włącza dopiero
+     ustawiony TEBEX_STORE. */
+
+  function setupShop() {
+    var shop = $('.shop-page');
+    if (!shop || !TEBEX_STORE) return;
+
+    shop.classList.add('is-live');
+
+    $$('[data-shop-soon]', shop).forEach(function (el) { el.hidden = true; });
+    $$('[data-shop-live]', shop).forEach(function (el) { el.hidden = false; });
+    $$('[data-store-link]').forEach(function (el) { el.href = TEBEX_STORE; });
+
+    var source = $('[data-cut-source]', shop);
+    var lines = source ? $$('.cut__line', source) : [];
+    if (lines.length > 1) {
+      lines[1].textContent = 'OTWARTY';
+      syncCuts();
+    }
+  }
+
+  setupShop();
 
   /* ---------- Zakładki: Główna / Sklep ---------------------- */
 
@@ -102,6 +154,8 @@
   });
 
   function routeFromHash(opts) {
+    if (!pages.length) return;
+
     var options = opts || {};
     var hash = location.hash.replace('#', '');
 

@@ -429,9 +429,14 @@
         </span>
       </h1>
 
-      <p>
+      <p data-shop-soon>
         Sklep stawiamy na <b>Tebex</b>, żeby zakup rangi albo klucza działał od ręki,
         bez czekania na administratora. Otwieramy go razem ze startem serwera.
+      </p>
+
+      <p data-shop-live hidden>
+        Rangi, klucze i kosmetyki kupisz na <b>Tebex</b> — świadczenie ląduje na koncie
+        automatycznie, od ręki, bez czekania na administratora.
       </p>
 
       <ul class="pay-list">
@@ -442,15 +447,21 @@
       </ul>
 
       <div class="shop-preview">
-        <article><span class="kicker">PLANOWANE</span><h3>Rangi</h3><p>Wyróżnienie na czacie, dodatkowe komendy i kosmetyki.</p></article>
-        <article><span class="kicker">PLANOWANE</span><h3>Klucze</h3><p>Zwykłe, Epic i Legendary — pojedynczo oraz w pakietach.</p></article>
-        <article><span class="kicker">PLANOWANE</span><h3>Kosmetyki</h3><p>Efekty, tagi i skiny przedmiotów. Zero wpływu na walkę.</p></article>
+        <article><span class="kicker"><span data-shop-soon>PLANOWANE</span><span data-shop-live hidden>W SPRZEDAŻY</span></span><h3>Rangi</h3><p>Wyróżnienie na czacie, dodatkowe komendy i kosmetyki.</p></article>
+        <article><span class="kicker"><span data-shop-soon>PLANOWANE</span><span data-shop-live hidden>W SPRZEDAŻY</span></span><h3>Klucze</h3><p>Zwykłe, Epic i Legendary — pojedynczo oraz w pakietach.</p></article>
+        <article><span class="kicker"><span data-shop-soon>PLANOWANE</span><span data-shop-live hidden>W SPRZEDAŻY</span></span><h3>Kosmetyki</h3><p>Efekty, tagi i skiny przedmiotów. Zero wpływu na walkę.</p></article>
       </div>
 
       <div class="actions">
-        <a class="btn btn-primary" href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">Powiadom mnie na Discordzie</a>
+        <a class="btn btn-primary" data-shop-soon href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">Powiadom mnie na Discordzie</a>
+        <a class="btn btn-primary btn-lg" data-shop-live data-store-link hidden href="#" target="_blank" rel="noopener">Przejdź do sklepu</a>
         <button class="btn btn-ghost back-link" type="button" data-tab="glowna">← Wróć na stronę główną</button>
       </div>
+
+      <p class="shop-legal">
+        Sprzedawcą jest Tebex Limited. Kupując, akceptujesz
+        <a href="regulamin.html">regulamin sklepu</a>.
+      </p>
     </div>
   </section>
 </div>
@@ -462,6 +473,7 @@
   <span class="footer-links">
     <a href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">Discord</a>
     <button type="button" data-tab="sklep">Sklep</button>
+    <a href="regulamin.html">Regulamin</a>
     <a href="mailto:kontakt@hoodcraft.pl">kontakt@hoodcraft.pl</a>
   </span>
 </footer>

@@ -97,9 +97,13 @@ CO GDZIE ZMIENIĆ
 
   Regulamin
       regulamin.html
+      Regulamin napisany jest pod DZIAŁALNOŚĆ NIEREJESTROWANĄ:
+      bez NIP i REGON, bo nie ma wpisu do CEIDG.
       Pola wyróżnione na czerwono (klasa "fill") MUSZĄ zostać
-      uzupełnione przed publikacją: dane usługodawcy, adres,
-      NIP, REGON, e-mail do reklamacji i data aktualizacji.
+      uzupełnione przed publikacją — zostały cztery:
+      imię i nazwisko, adres, e-mail do reklamacji, data.
+      Po zarejestrowaniu działalności gospodarczej podmień
+      punkt 1.1 wg komentarza, który jest w pliku obok niego.
       Sprzedawcą jesteś Ty (Usługodawca z punktu 1.1), a SimPay
       jest tylko operatorem płatności — nie zmieniaj tego paragrafu
       bez sprawdzenia umowy z operatorem.

@@ -69,16 +69,16 @@ CO GDZIE ZMIENIĆ
   Discord
       index.html -> wyszukaj "discord.gg/hoodcraft"
 
-  Uruchomienie sklepu Tebex
+  Uruchomienie sklepu (ItemShopSys)
       script.js -> na samej górze pliku:
-          var TEBEX_STORE = '';
+          var SHOP_URL = '';
       Puste = zakładka Sklep pokazuje "SKLEP WKRÓTCE".
       Po wpisaniu adresu sklepu, np.
-          var TEBEX_STORE = 'https://hoodcraft.tebex.io';
+          var SHOP_URL = 'https://hoodcraft.myis.pl';
       zakładka sama przechodzi w tryb sprzedaży: nagłówek
       "SKLEP OTWARTY", przycisk "Przejdź do sklepu" i etykiety
       kart "W SPRZEDAŻY". To jedyna linijka do zmiany.
-      Po wykupieniu Tebex Plus i podpięciu subdomeny wpisujesz
+      Po podpięciu własnej domeny w panelu ItemShopSys wpisujesz
       tam po prostu https://sklep.hoodcraft.pl
 
   Regulamin
@@ -86,8 +86,9 @@ CO GDZIE ZMIENIĆ
       Pola wyróżnione na czerwono (klasa "fill") MUSZĄ zostać
       uzupełnione przed publikacją: dane usługodawcy, adres,
       NIP, REGON, e-mail do reklamacji i data aktualizacji.
-      Sprzedawcą przy Tebeksie jest Tebex Limited — to celowe,
-      nie zmieniaj tego paragrafu bez sprawdzenia umowy z Tebeksem.
+      Sprzedawcą jesteś Ty (Usługodawca z punktu 1.1), a SimPay
+      jest tylko operatorem płatności — nie zmieniaj tego paragrafu
+      bez sprawdzenia umowy z operatorem.
 
 DISCORD
   https://discord.gg/hoodcraft

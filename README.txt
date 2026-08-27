@@ -23,9 +23,23 @@ PODGLĄD LOKALNIE
   i wejdź na http://localhost:8000
 
 PUBLIKACJA NA HOODCRAFT.PL
-  Wgraj index.html, style.css, script.js, robots.txt, sitemap.xml
-  i cały folder assets do katalogu public_html (lub www) na hostingu home.pl.
-  Nie zmieniaj struktury katalogów — ścieżki do plików są względne.
+  home.pl działa na panelu Plesk, w którym katalogiem strony jest
+  httpdocs (nie public_html).
+
+  panel.home.pl -> "Pliki" w menu z lewej -> wybierz hoodcraft.pl
+  (albo: "WWW domeny" -> przycisk "Menedżer plików")
+  -> wejdź do katalogu httpdocs
+
+  Najszybciej: wgraj tam całą paczkę ZIP przyciskiem "Wgraj",
+  zaznacz ją i użyj "Wypakuj", a potem skasuj sam plik ZIP.
+
+  index.html musi wylądować bezpośrednio w httpdocs, a nie
+  w podkatalogu. Folder assets musi zostać folderem assets —
+  ścieżki do plików są względne.
+
+  Jeśli w Twoim pakiecie katalog nazywa się inaczej (public_html
+  albo www), obowiązuje ta sama zasada: pliki idą do tego katalogu,
+  który panel wskazuje jako katalog strony WWW.
 
 CO GDZIE ZMIENIĆ
 

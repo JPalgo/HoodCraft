@@ -100,8 +100,12 @@ CO GDZIE ZMIENIĆ
       Regulamin napisany jest pod DZIAŁALNOŚĆ NIEREJESTROWANĄ:
       bez NIP i REGON, bo nie ma wpisu do CEIDG.
       Pola wyróżnione na czerwono (klasa "fill") MUSZĄ zostać
-      uzupełnione przed publikacją — zostały cztery:
-      imię i nazwisko, adres, e-mail do reklamacji, data.
+      uzupełnione przed publikacją — jest ich pięć:
+      imię i nazwisko, adres do korespondencji, e-mail,
+      numer telefonu i data.
+      Adres do korespondencji nie musi być adresem zamieszkania,
+      ale musi być realny i musisz pod nim odbierać pocztę —
+      szczegóły w komentarzu przy punkcie 1.1 w pliku.
       Po zarejestrowaniu działalności gospodarczej podmień
       punkt 1.1 wg komentarza, który jest w pliku obok niego.
       Sprzedawcą jesteś Ty (Usługodawca z punktu 1.1), a SimPay

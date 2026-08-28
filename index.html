@@ -345,8 +345,8 @@
       </li>
       <li class="road-step">
         <span class="road-when">Zaraz po starcie</span>
-        <h3>Sklep na Tebex</h3>
-        <p>Automatyczne zakupy rang i kluczy: BLIK, karta, Paysafecard, PayPal i krypto.</p>
+        <h3>Automatyczny sklep</h3>
+        <p>Dziś zakupy idą przez ticket na Discordzie. Docelowo automat: kupujesz i masz od ręki.</p>
       </li>
       <li class="road-step">
         <span class="road-when">Sezon 1</span>
@@ -417,51 +417,177 @@
       <h1 class="cut cut--sm">
         <span class="cut__half cut__half--top" data-cut-source>
           <span class="cut__line">SKLEP</span>
-          <span class="cut__line">WKRÓTCE</span>
+          <span class="cut__line">SERWERA</span>
         </span>
         <span class="cut__half cut__half--bot" aria-hidden="true">
           <span class="cut__line">SKLEP</span>
-          <span class="cut__line">WKRÓTCE</span>
+          <span class="cut__line">SERWERA</span>
         </span>
         <span class="cut__half cut__half--edge" aria-hidden="true">
           <span class="cut__line">SKLEP</span>
-          <span class="cut__line">WKRÓTCE</span>
+          <span class="cut__line">SERWERA</span>
         </span>
       </h1>
 
-      <p data-shop-soon>
-        Sklep stawiamy na <b>Tebex</b>, żeby zakup rangi albo klucza działał od ręki,
-        bez czekania na administratora. Otwieramy go razem ze startem serwera.
+      <p class="shop-intro">
+        Zakupy prowadzimy przez <b>ticket na Discordzie</b>. Piszesz, co chcesz wziąć,
+        dogadujemy płatność i dostajesz swoje w grze — bez automatu, za to z żywym człowiekiem
+        po drugiej stronie.
       </p>
 
-      <p data-shop-live hidden>
-        Rangi, klucze i kosmetyki kupisz na <b>Tebex</b> — świadczenie ląduje na koncie
-        automatycznie, od ręki, bez czekania na administratora.
-      </p>
+      <a class="btn btn-primary btn-lg" href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">Otwórz ticket na Discordzie</a>
 
-      <ul class="pay-list">
-        <li>BLIK</li>
-        <li>Karta</li>
-        <li>Paysafecard</li>
-        <li>PayPal</li>
-        <li>Krypto</li>
-      </ul>
+      <!-- ---- JAK KUPIĆ ---- -->
+      <ol class="ticket-flow">
+        <li>
+          <span class="ticket-num">01</span>
+          <h3>Wbij na Discord</h3>
+          <p>discord.gg/hoodcraft — kanał <b>#sklep</b>.</p>
+        </li>
+        <li>
+          <span class="ticket-num">02</span>
+          <h3>Otwórz ticket</h3>
+          <p>Napisz swój nick i co chcesz kupić. Odpisujemy zwykle w kilkanaście minut.</p>
+        </li>
+        <li>
+          <span class="ticket-num">03</span>
+          <h3>Płacisz i odbierasz</h3>
+          <p>BLIK albo przelew. Ranga albo klucze lądują na koncie od razu po zaksięgowaniu.</p>
+        </li>
+      </ol>
 
-      <div class="shop-preview">
-        <article><span class="kicker"><span data-shop-soon>PLANOWANE</span><span data-shop-live hidden>W SPRZEDAŻY</span></span><h3>Rangi</h3><p>Wyróżnienie na czacie, dodatkowe komendy i kosmetyki.</p></article>
-        <article><span class="kicker"><span data-shop-soon>PLANOWANE</span><span data-shop-live hidden>W SPRZEDAŻY</span></span><h3>Klucze</h3><p>Zwykłe, Epic i Legendary — pojedynczo oraz w pakietach.</p></article>
-        <article><span class="kicker"><span data-shop-soon>PLANOWANE</span><span data-shop-live hidden>W SPRZEDAŻY</span></span><h3>Kosmetyki</h3><p>Efekty, tagi i skiny przedmiotów. Zero wpływu na walkę.</p></article>
+      <!-- ---- RANGI ---- -->
+      <div class="shop-section-head">
+        <span class="section-kicker">RANGI</span>
+        <h2>Cztery poziomy</h2>
+      </div>
+
+      <div class="rank-grid">
+        <article class="rank rank--vip">
+          <div class="rank-art">
+            <img src="assets/sklep/vip.png" alt="Ranga VIP" loading="lazy" width="600" height="600">
+          </div>
+          <div class="rank-body">
+            <h3>VIP</h3>
+            <p class="rank-price">14,99 <span>zł</span></p>
+            <ul>
+              <li>Kolorowy prefix na czacie</li>
+              <li>Podstawowe kosmetyki</li>
+              <li>Wyróżnienie na liście graczy</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rank rank--svip">
+          <div class="rank-art">
+            <img src="assets/sklep/svip.png" alt="Ranga SVIP" loading="lazy" width="600" height="600">
+          </div>
+          <div class="rank-body">
+            <h3>SVIP</h3>
+            <p class="rank-price">19,99 <span>zł</span></p>
+            <ul>
+              <li>Wszystko z VIP</li>
+              <li>Dodatkowe zestawy startowe</li>
+              <li>Specjalne komendy</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rank rank--evip">
+          <div class="rank-art">
+            <img src="assets/sklep/evip.png" alt="Ranga EVIP" loading="lazy" width="600" height="600">
+          </div>
+          <div class="rank-body">
+            <h3>EVIP</h3>
+            <p class="rank-price">39,99 <span>zł</span></p>
+            <ul>
+              <li>Wszystko z SVIP</li>
+              <li>Kosmetyki niedostępne niżej</li>
+              <li>Pierwszeństwo wejścia na pełny serwer</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="rank rank--mvip">
+          <div class="rank-art">
+            <img src="assets/sklep/mvip.png" alt="Ranga MVIP" loading="lazy" width="600" height="600">
+          </div>
+          <div class="rank-body">
+            <h3>MVIP</h3>
+            <p class="rank-price">49,99 <span>zł</span></p>
+            <ul>
+              <li>Wszystko z EVIP</li>
+              <li>Pełny zestaw komend</li>
+              <li>Nagrody premium i efekty zabójstwa</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- ---- KLUCZE ---- -->
+      <div class="shop-section-head">
+        <span class="section-kicker">KLUCZE DO SKRZYNEK</span>
+        <h2>Otwierasz, ryzykujesz</h2>
+      </div>
+
+      <div class="key-panel">
+        <div class="key-art">
+          <img src="assets/sklep/klucz-legendarny.png" alt="Klucz Legendarny" loading="lazy" width="600" height="1000">
+        </div>
+
+        <div class="key-list">
+          <article class="key key--rare">
+            <div>
+              <h3>Klucz Rzadki</h3>
+              <p>Podstawowa pula: zapasy na start walki i drobne kosmetyki.</p>
+            </div>
+            <p class="key-price">0,49 <span>zł</span></p>
+          </article>
+
+          <article class="key key--epic">
+            <div>
+              <h3>Klucz Epicki</h3>
+              <p>Rzadsza pula, w tym kosmetyki niedostępne w kluczu rzadkim.</p>
+            </div>
+            <p class="key-price">0,99 <span>zł</span></p>
+          </article>
+
+          <article class="key key--legendary">
+            <div>
+              <h3>Klucz Legendarny</h3>
+              <p>Najrzadsza pula na serwerze — unikatowe kosmetyki i nagrody z eventów.</p>
+            </div>
+            <p class="key-price">1,99 <span>zł</span></p>
+          </article>
+
+          <p class="key-note">Klucze kupisz pojedynczo albo w pakietach — napisz w tickecie, ile potrzebujesz.</p>
+        </div>
+      </div>
+
+      <!-- ---- INFO ---- -->
+      <div class="shop-info">
+        <div>
+          <span class="kicker">PŁATNOŚĆ</span>
+          <p>BLIK i przelew. Szczegóły dostajesz w tickecie.</p>
+        </div>
+        <div>
+          <span class="kicker">CZAS REALIZACJI</span>
+          <p>Ręcznie, zwykle tego samego dnia. Nie jesteśmy botem.</p>
+        </div>
+        <div>
+          <span class="kicker">MASZ PYTANIE?</span>
+          <p>Zapytaj w tickecie zanim zapłacisz. Od tego on jest.</p>
+        </div>
       </div>
 
       <div class="actions">
-        <a class="btn btn-primary" data-shop-soon href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">Powiadom mnie na Discordzie</a>
-        <a class="btn btn-primary btn-lg" data-shop-live data-store-link hidden href="#" target="_blank" rel="noopener">Przejdź do sklepu</a>
+        <a class="btn btn-primary" href="https://discord.gg/hoodcraft" target="_blank" rel="noopener">Otwórz ticket</a>
         <button class="btn btn-ghost back-link" type="button" data-tab="glowna">← Wróć na stronę główną</button>
       </div>
 
       <p class="shop-legal">
-        Sprzedawcą jest Tebex Limited. Kupując, akceptujesz
-        <a href="regulamin.html">regulamin sklepu</a>.
+        Kupując, akceptujesz <a href="regulamin.html">regulamin sklepu</a>.
+        Ceny w złotych, zawierają wszystkie należne opłaty.
       </p>
     </div>
   </section>

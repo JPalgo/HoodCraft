@@ -5,30 +5,6 @@
 (function () {
   'use strict';
 
-  /* ============================================================
-     KONFIGURACJA — jedyne miejsce do ręcznej edycji
-     ============================================================ */
-
-  /*
-    Adres sklepu Tebex.
-
-    Dopóki jest tu pusty ciąg, zakładka Sklep pokazuje komunikat
-    "SKLEP WKRÓTCE". Gdy sklep będzie gotowy, wpisz jego adres —
-    najpierw darmową subdomenę z Tebeksa:
-
-        var SHOP_URL = 'https://hoodcraft.tebex.io';
-
-    a po wykupieniu Tebex Plus i podpięciu własnej subdomeny:
-
-        var SHOP_URL = 'https://sklep.hoodcraft.pl';
-
-    Nic więcej nie trzeba zmieniać — nagłówek, opis, przyciski
-    i etykiety kart przestawią się same.
-  */
-  var SHOP_URL = '';
-
-  /* ============================================================ */
-
   var $  = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
 
@@ -49,31 +25,6 @@
   }
 
   syncCuts();
-
-  /* ---------- Sklep ------------------------------------------
-     Strona domyślnie stoi w trybie "wkrótce" — także wtedy, gdy
-     JavaScript się nie wykona. Tryb sklepu włącza dopiero
-     ustawiony SHOP_URL. */
-
-  function setupShop() {
-    var shop = $('.shop-page');
-    if (!shop || !SHOP_URL) return;
-
-    shop.classList.add('is-live');
-
-    $$('[data-shop-soon]', shop).forEach(function (el) { el.hidden = true; });
-    $$('[data-shop-live]', shop).forEach(function (el) { el.hidden = false; });
-    $$('[data-store-link]').forEach(function (el) { el.href = SHOP_URL; });
-
-    var source = $('[data-cut-source]', shop);
-    var lines = source ? $$('.cut__line', source) : [];
-    if (lines.length > 1) {
-      lines[1].textContent = 'OTWARTY';
-      syncCuts();
-    }
-  }
-
-  setupShop();
 
   /* ---------- Zakładki: Główna / Sklep ---------------------- */
 

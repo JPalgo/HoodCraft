@@ -11,6 +11,7 @@ PLIKI
   assets/og-image.jpg           miniatura linku na Discordzie i w social media
   assets/favicon.svg            ikona karty przeglądarki
   assets/apple-touch-icon.png   ikona na iOS
+  assets/sklep/*.png            grafiki rang i klucza (na razie zaślepki)
   assets/fonts/*.woff2          Anton + Inter hostowane u nas
 
 PODGLĄD LOKALNIE
@@ -83,17 +84,22 @@ CO GDZIE ZMIENIĆ
   Discord
       index.html -> wyszukaj "discord.gg/hoodcraft"
 
-  Uruchomienie sklepu (Tebex)
-      script.js -> na samej górze pliku:
-          var SHOP_URL = '';
-      Puste = zakładka Sklep pokazuje "SKLEP WKRÓTCE".
-      Po wpisaniu adresu sklepu, np.
-          var SHOP_URL = 'https://hoodcraft.tebex.io';
-      zakładka sama przechodzi w tryb sprzedaży: nagłówek
-      "SKLEP OTWARTY", przycisk "Przejdź do sklepu" i etykiety
-      kart "W SPRZEDAŻY". To jedyna linijka do zmiany.
-      Po wykupieniu Tebex Plus i podpięciu subdomeny wpisujesz
-      tam po prostu https://sklep.hoodcraft.pl
+  Sklep i cennik
+      index.html -> zakładka Sklep (<div id="sklep">)
+      Zakupy idą przez ticket na Discordzie — nie ma tam żadnej
+      integracji z zewnętrznym sklepem, sam cennik i opis procesu.
+      Ceny zmieniasz bezpośrednio w <p class="rank-price">
+      oraz <p class="key-price">.
+
+      Grafiki rang i klucza wrzucasz do assets/sklep/ pod nazwami:
+          vip.png            (ranga VIP)
+          svip.png           (ranga SVIP)
+          evip.png           (ranga EVIP)
+          mvip.png           (ranga MVIP)
+          klucz-legendarny.png
+      Kwadratowe dla rang, pionowa dla klucza (z przezroczystym tłem).
+      W paczce leżą ZAŚLEPKI z napisem "PODMIEŃ NA WŁASNĄ GRAFIKĘ" —
+      nadpisz je swoimi plikami przed wgraniem strony na serwer.
 
   Regulamin
       regulamin.html
@@ -114,9 +120,9 @@ CO GDZIE ZMIENIĆ
       szczegóły w komentarzu przy punkcie 1.1 w pliku.
       Po zarejestrowaniu działalności gospodarczej podmień
       punkt 1.1 wg komentarza, który jest w pliku obok niego.
-      Sprzedawcą przy Tebeksie jest Tebex Limited jako merchant
-      of record — nie zmieniaj paragrafu 4 bez sprawdzenia umowy
-      z Tebeksem.
+      Sprzedawcą jesteś Ty (Usługodawca z punktu 1.1) — sprzedaż
+      idzie bezpośrednio przez ticket, bez pośrednika. Paragraf 4
+      i punkt 5.1 opisują ręczne nadawanie świadczeń.
 
 DISCORD
   https://discord.gg/hoodcraft

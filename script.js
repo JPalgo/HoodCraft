@@ -10,15 +10,15 @@
      ============================================================ */
 
   /*
-    Adres sklepu (ItemShopSys).
+    Adres sklepu Tebex.
 
     Dopóki jest tu pusty ciąg, zakładka Sklep pokazuje komunikat
     "SKLEP WKRÓTCE". Gdy sklep będzie gotowy, wpisz jego adres —
-    najpierw darmową subdomenę z ItemShopSys:
+    najpierw darmową subdomenę z Tebeksa:
 
-        var SHOP_URL = 'https://hoodcraft.myis.pl';
+        var SHOP_URL = 'https://hoodcraft.tebex.io';
 
-    a po podpięciu własnej domeny w panelu ItemShopSys:
+    a po wykupieniu Tebex Plus i podpięciu własnej subdomeny:
 
         var SHOP_URL = 'https://sklep.hoodcraft.pl';
 
